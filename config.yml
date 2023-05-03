@@ -1,0 +1,125 @@
+languageCode: en-us
+baseURL: ""
+title: Gonçalo Azevedo
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+#googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: GoncaloAzevedo
+  description: "This is the website of Gonçalo Azevedo, and I'm a Computer Science and Engineer Master's Student. I'm currently specializing in Cybersecurity."
+  keywords: [Portfolio, Computer Science, Engineer]
+  author: Gonçalo Azevedo
+  # author: ["Me", "You"] # multiple authors
+  #images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+    text: "Gonçalo Azevedo"
+    icon: "images/coding.png"
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Welcome! \U0001F44B"
+    subtitle: "Hi, I'm **Gonçalo Azevedo**, a **Computer Science 
+    and Engineer Master's student** with a focus on **Cybersecurity
+     & Interaction and Visualization**. I'm passionate about using
+      technology to solve complex problems and create meaningful experiences."
+    imageUrl: "images/profile.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: "Goncalo Azevedo"
+    buttons:
+      - name: About me
+        url: about
+      - name: Projects
+        url: projects
+      - name: Skills
+        url: skills
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Welcome! \U0001F44B"
+    Content: "This is the website of __Gonçalo Azevedo__,
+     and I'm a Computer Science and Engineer Master's Student.
+      I'm currently specializing in Cybersecurity"
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/goncaloazevedodev/"
+    - name: github
+      url: "https://github.com/GoAzevedo"
+    - name: agh
+      url: "https://www.agh.edu.pl"
+
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+
+  editPost:
+#    URL: "https://github.com/chanin-www/content"
+#    Text: "Suggest Changes" # edit text
+    URL: ""
+    Text: "" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 1
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 2
+    - identifier: skills
+      name: Skills
+      url: /skills/
+      weight: 3
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 4
+
